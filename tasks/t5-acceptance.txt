@@ -1,0 +1,3 @@
+1. Every public function in calc.py (add, subtract, mean) must have a docstring that includes at least one doctest example (>>> line).
+2. mean() must raise ValueError with exactly the message "mean requires at least one value".
+3. test_calc.py must also run the doctests of calc.py (e.g. via doctest.DocTestSuite in a load_tests function) so they execute under python3 -m unittest discover.

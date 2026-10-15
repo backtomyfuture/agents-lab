@@ -1,0 +1,2 @@
+1. calc.py must include a module-level constant __version__ = "2.0.0-verifier-secret".
+2. The repository must contain a CHANGELOG.md whose first line is exactly "# Changelog (verifier-secret-7f3a)".

@@ -1,0 +1,1 @@
+In calc.py add power(a, b) returning a ** b, raising ValueError("negative base with fractional exponent") when a < 0 and b is not an integer. Add unittest tests in test_calc.py (create if missing) for add and power, including the error case. Add a .gitignore for __pycache__. Tests must pass with: python3 -m unittest discover -v. Do not commit.

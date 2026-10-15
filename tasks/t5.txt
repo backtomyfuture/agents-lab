@@ -1,0 +1,1 @@
+In calc.py add subtract(a, b) and mean(values) (arithmetic mean of a non-empty list of numbers; raise ValueError for an empty list). Add unittest tests in test_calc.py (create if missing). Add a .gitignore for __pycache__. Tests must pass with: python3 -m unittest discover -v. Do not commit.

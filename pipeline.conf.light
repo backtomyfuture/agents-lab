@@ -1,0 +1,7 @@
+# LIGHT=1 overlay (v3.4): small tasks, ~25 min. Sourced AFTER PROFILE (composable: PROFILE=core LIGHT=1) and BEFORE pipeline.conf; env still wins.
+# S1 amp medium -> S1.5/S1.8 -> S2 -> S3 -> S4 -> S5 single merged code+security review (one Droid) -> S8. Skips S4m, S4.5, S6, S7, S9.
+SPEC_MODE=${SPEC_MODE:-medium}; SPEC_FALLBACK=${SPEC_FALLBACK:-high}
+MUTATION_N=${MUTATION_N:-0}; PREREVIEW=${PREREVIEW:-0}
+SINGLE_REVIEW=${SINGLE_REVIEW:-1}; SKIP_DOCS=${SKIP_DOCS:-1}; SKIP_RETRO=${SKIP_RETRO:-1}
+TASK_TIMEOUT=${TASK_TIMEOUT:-3600}; MAX_CALLS_TOTAL=${MAX_CALLS_TOTAL:-16}
+MAX_CALLS_AMP=${MAX_CALLS_AMP:-2}; MAX_CALLS_DROID=${MAX_CALLS_DROID:-6}; MAX_CALLS_GROK=${MAX_CALLS_GROK:-6}; MAX_CALLS_AGY=${MAX_CALLS_AGY:-6}

@@ -1,0 +1,10 @@
+runs/
+wt/
+sample-repo/
+vendor/
+__pycache__/
+*.pyc
+*.out
+*.old
+prompt-t1.txt
+.env

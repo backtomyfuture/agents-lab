@@ -1,0 +1,125 @@
+{
+ "merges": 1,
+ "rules": [
+  {
+   "key": "stage passes only when its required output file exists and last line matches stage contract status working with that file absent for 10 minutes triggers one re prompt then fail",
+   "text": "A stage passes only when its required output file exists and the last line matches the stage contract; `status=working` with that file absent for 10 minutes triggers one re-prompt, then a fail.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "exit code 0 counts as success only when stderr does not match provider fault credit balance network first credit balance fault skips every remaining tier of that provider",
+   "text": "Exit code 0 counts as success only when stderr does not match a provider fault (credit balance, network); the first credit-balance fault skips every remaining tier of that provider.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "on provider fault or rc 0 content gate fail record that attempt as its own stages tsv row with model seconds and reason and archive rejected artifact before retry overwrites it network fault is not retried on same provider changed",
+   "text": "On a provider fault or an rc=0 content-gate fail, record that attempt as its own stages.tsv row with model, seconds, and reason, and archive the rejected artifact before a retry overwrites it; a network fault is not retried on the same provider. (changed)",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "pre review that edits nothing does not re run suite already green in stage log for same git tree",
+   "text": "A pre-review that edits nothing does not re-run a suite already green in the stage log for the same git tree.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "regex in spec names engine match rule fullmatch or z pattern includes explicit trailing newline accept or reject test",
+   "text": "A regex in a spec names the engine match rule (`fullmatch` or `\\Z`); a `$` pattern includes an explicit trailing-newline accept-or-reject test.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "behave like function x means both call sites call one shared helper second copy is review defect",
+   "text": "\"Behave like function X\" means both call sites call one shared helper; a second copy is a review defect.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "documentation example is valid only when captured command transcript including trailing whitespace is byte identical to example",
+   "text": "A documentation example is valid only when a captured command transcript, including trailing whitespace, is byte-identical to the example.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "reviewer records probe fail as product defect only after harness satisfies every precondition spec states for that command otherwise probe is fixed and re run before verdict",
+   "text": "A reviewer records a probe FAIL as a product defect only after the harness satisfies every precondition the spec states for that command; otherwise the probe is fixed and re-run before the verdict.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "under pipefail stub check reads diff to eof spec named file whose diff contains notimplementederror is kept",
+   "text": "Under `pipefail`, a stub check reads the diff to EOF; a spec-named file whose diff contains `NotImplementedError` is kept.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "test reaches new public symbol so that absence after stub revert raises assertionerror",
+   "text": "A test reaches a new public symbol so that absence after a stub revert raises `AssertionError`.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "implemented is valid only when saved discover log shows every non disputed test passing",
+   "text": "`IMPLEMENTED` is valid only when the saved discover log shows every non-disputed test passing.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "redaction replaces only confidential token and leaves public flag criterion id and conclusion on that line verbatim changed",
+   "text": "Redaction replaces only the confidential token and leaves the public flag, criterion id, and conclusion on that line verbatim. (changed)",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "one line per record format rejects raw newlines in that field or names escape",
+   "text": "A one-line-per-record format rejects raw newlines in that field or names the escape.",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "spec passes only when each required section is standalone markdown heading whose text matches gate missing heading fails stage at exit code 0 new",
+   "text": "A spec passes only when each required section is a standalone Markdown heading whose text matches the gate; a missing heading fails the stage at exit code 0. (new)",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  },
+  {
+   "key": "when worktree cannot hold cache directory lint uses ruff check no cache ruff_cache permission error is environment artifact new",
+   "text": "When the worktree cannot hold a cache directory, lint uses `ruff check --no-cache`; a `.ruff_cache` permission error is an environment artifact. (new)",
+   "first": "2026-10-15",
+   "last_merge": 1,
+   "count": 1,
+   "stale": false
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+# Proposed AGENTS.md rules (lab_tools.py rules_merge: dedupe, conflicts + stale flagged for a human, top 30 shown, nothing auto-deleted)
+- A stage passes only when its required output file exists and the last line matches the stage contract; `status=working` with that file absent for 10 minutes triggers one re-prompt, then a fail.
+- Exit code 0 counts as success only when stderr does not match a provider fault (credit balance, network); the first credit-balance fault skips every remaining tier of that provider.
+- On a provider fault or an rc=0 content-gate fail, record that attempt as its own stages.tsv row with model, seconds, and reason, and archive the rejected artifact before a retry overwrites it; a network fault is not retried on the same provider. (changed)
+- A pre-review that edits nothing does not re-run a suite already green in the stage log for the same git tree.
+- A regex in a spec names the engine match rule (`fullmatch` or `\Z`); a `$` pattern includes an explicit trailing-newline accept-or-reject test.
+- "Behave like function X" means both call sites call one shared helper; a second copy is a review defect.
+- A documentation example is valid only when a captured command transcript, including trailing whitespace, is byte-identical to the example.
+- A reviewer records a probe FAIL as a product defect only after the harness satisfies every precondition the spec states for that command; otherwise the probe is fixed and re-run before the verdict.
+- Under `pipefail`, a stub check reads the diff to EOF; a spec-named file whose diff contains `NotImplementedError` is kept.
+- A test reaches a new public symbol so that absence after a stub revert raises `AssertionError`.
+- `IMPLEMENTED` is valid only when the saved discover log shows every non-disputed test passing.
+- Redaction replaces only the confidential token and leaves the public flag, criterion id, and conclusion on that line verbatim. (changed)
+- A one-line-per-record format rejects raw newlines in that field or names the escape.
+- A spec passes only when each required section is a standalone Markdown heading whose text matches the gate; a missing heading fails the stage at exit code 0. (new)
+- When the worktree cannot hold a cache directory, lint uses `ruff check --no-cache`; a `.ruff_cache` permission error is an environment artifact. (new)

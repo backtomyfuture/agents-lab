@@ -1,0 +1,14 @@
+# Profile "core": TEMPORARY fallback while the Droid paid quota is exhausted (2026-10-14). Only the Droid stages change.
+# Enable: PROFILE=core ...   Disable: omit PROFILE. Sourced BEFORE pipeline.conf; explicit env vars still win.
+# Supported efforts per `droid exec --help`: GLM-5.3 low|high|max; Qwen3.8 Max low|medium|xhigh; Kimi K3 off|low|high|max; DeepSeek V4.1 Flash off|low|high|max
+DROID_PAID_AVAILABLE=${DROID_PAID_AVAILABLE:-0}
+if [ "${CORE_SWAP_REVIEW:-0}" = 1 ]; then   # swap S5/S6 assignment (glm <-> qwen)
+  REVIEW_MODEL=${REVIEW_MODEL:-qwen3.8-max};     REVIEW_EFFORT=${REVIEW_EFFORT:-xhigh}
+  SECURITY_MODEL=${SECURITY_MODEL:-glm-5.3};     SECURITY_EFFORT=${SECURITY_EFFORT:-high}
+else
+  REVIEW_MODEL=${REVIEW_MODEL:-glm-5.3};         REVIEW_EFFORT=${REVIEW_EFFORT:-high}
+  SECURITY_MODEL=${SECURITY_MODEL:-qwen3.8-max}; SECURITY_EFFORT=${SECURITY_EFFORT:-xhigh}
+fi
+JUDGE_MODEL=${JUDGE_MODEL:-kimi-k3};             JUDGE_EFFORT=${JUDGE_EFFORT:-high}
+# Only used if a Grok stage is switched back to droid (e.g. TESTS_AGENT=droid):
+CORE_TESTS_MODEL=glm-5.3; CORE_DOCS_MODEL=deepseek-v4.1-flash; CORE_RETRO_MODEL=deepseek-v4.1-flash

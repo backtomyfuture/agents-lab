@@ -1,0 +1,6 @@
+In this Python repo (calc.py):
+1. Add divide(a, b) that raises ZeroDivisionError with a clear message "cannot divide by zero" when b == 0 (also keep/ensure add and multiply exist).
+2. Add a CLI entrypoint: `python3 calc.py <op> <a> <b>` where op is add|multiply|divide; numbers parsed as float, print result; on bad op/args or division by zero print an error to stderr and exit with code 2. Use argparse, guarded by if __name__ == "__main__".
+3. Add unittest tests in test_calc.py covering all functions, zero division, and the CLI (via subprocess) including error exit codes.
+Tests must pass with: python3 -m unittest discover -v
+Add a .gitignore for __pycache__. Do not commit.
